@@ -1,0 +1,12 @@
+@charset "utf-8";
+
+.container{
+	width: 1400px;
+  margin: 0 auto;
+  background-color: rgb(254, 255, 199);
+}
+
+.header{
+  padding:135px 20px 0 20px ;
+  background-color:green;
+}
