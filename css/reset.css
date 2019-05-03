@@ -1,0 +1,83 @@
+@charset "utf-8";
+@import url('https://fonts.googleapis.com/css?family=Montserrat:400,500,700|Noto+Sans+KR:400,500,700');
+*, *::before, *::after{ /*별은 모든요소 다 선택*/
+	box-sizing: border-box;
+}
+/* ::selection {
+  color: blue; 
+  background:#ef5350;
+} */
+.blind{
+	position: absolute;
+	width: 1px; 
+	height: 1px;
+	overflow: hidden;
+	margin: -1px;
+	clip: rect(0,0,0,0);
+	visibility: hidden;
+}
+/* .clearfix::after{
+	content:"";
+	display:block;
+	clear:both;
+} */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+ol, ul, li{
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+a{
+  color:inherit; /*body색상 상속되라는 의미*/
+  text-decoration: none;
+}
+html{
+  font-size: 10px;
+}
+body{
+  font-family: 'Montserrat', 'Noto Sans KR';
+  font-weight: 400; 
+  line-height: 1.15;
+  color: #181818;
+  font-size: 2rem; 
+  background-color: #f7f7f7;
+}
+/* responsive 이미지 */
+img{
+	max-width: 100%;
+	height: auto;
+}
