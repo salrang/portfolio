@@ -1,32 +1,221 @@
 @charset "utf-8";
 
-.container{
-	width: 1400px;
-  margin: 0 auto;
-  background-color: rgb(254, 255, 199);
-}
+/* @media all and (max-width:768px){
+  #container{min-width:0}
+  .container{
+    width: auto;
+  }
+  .header{
+    min-width:100%;
+  }
+  .header .logo{
+    position:absolute;
+    top:135px;
+    left:50%;
+    margin-left:-50px;
+    font-size: 36px;
+    color: #181818;
+    font-weight: 600;
+  }
+  .header .navigation ul{
+    position:absolute;
+    top:225px;
+    left:50%;
+    margin-left:-170px;
+  }
+  .header .navigation ul li{
+    margin-left: 35px;
+    display:inline-block;
+    color:#666;
+  }
+  .header .myinfo ul li:nth-child(1){
+    margin-right:25px;
+  }
+  .header .myinfo ul{
+    margin-top:-100px;
+    line-height:40px;
+  }
+  .header .myinfo ul li{
+    color:#666;
+    display:inline-block;
+  }
+  .section{
+    background: yellow;
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section .thumbnail{
+    width: 50%;
+    background: pink;
+  }
+  .section .thumbnail-wrapper{
+    padding: 1em;
+    background: lime;
+  }
+} */
 
-.header{
-  padding:135px 20px 0 20px ;
-  background-color:green;
-}
+ @media all and (max-width:768px){
+  #container{min-width:0}
+  .container{
+    width: auto;
+  }
+  .header-wrap{
+    margin:20px;
+    margin-top:50px;
+  }
+  .header{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+     }
+  .section{
+    text-align:center;
+    padding:20px;
+    }
+    .section .thumbnail{
+      margin:10px;
+      display:inline-block;
+      min-width:50%;
+      
+    }
+    .thumbnail. .img-wrapper{
+      line-height:0;
+      min-width:100%;
+    }
 
-.section{
-  background-color: ##666;
-}
+    .header .logo{
+      font-weight:700;
+    }
 
-.thumbnail{
-  background-color: tomato;
-}
-.thumbnail img{
-  min-width:300px;
-  height:300px;
-  background-color: #ededed;
-}
-.thumbnail h2{
-  margin-top:30px;
-}
+    .header .navigation ul li{
+      font-size:14pt;
+      margin-left: 20px;
+      display:inline-block;
+      color:#666;
+    }
+
+    .header .myinfo ul li:nth-child(1){
+      margin-right:25px;
+    }
+    .header .myinfo ul li{
+      font-size:14pt;
+      color:#666;
+      display:inline-block;
+    }
 .footer{
-  height:330px;
-  background-color:#666;
+  display:flex;
+  align-items: center;
+  justify-content: center;
 }
+ .footer .icon_top{
+   margin-top:20px;
+  margin-bottom:50px;
+  width:40px;
+  height:40px;
+  cursor:pointer;
+}
+
+}
+
+@media screen and (min-width: 769px){
+  .container{
+    width: 1200px;
+    height:auto;
+    margin: 0 auto;
+    background-color: #666;
+    
+  }
+  .header-wrap{
+    margin:20px;
+  }
+  .header{
+    max-width:1180px;
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+     }
+  .header .logo{
+    
+  }
+  .header .navigation ul li{
+    margin-left: 35px;
+    display:inline-block;
+    color:#666;
+  }
+  .header .myinfo ul li:nth-child(1){
+    margin-right:25px;
+  }
+  .header .myinfo ul li{
+    color:#666;
+    display:inline-block;
+  }
+  
+  .section-wrap{
+    margin:20px;
+   }  
+   .section{
+     max-width:1200px;
+   }
+   .section .thumbnail-wrap{
+     overflow: hidden;
+     max-width:1200px;
+     height:auto;
+     display:flex;
+     justify-content: space-between;
+     margin-left:-20px;
+   }
+   .section .thumbnail{
+     line-height:0;
+      max-width:300px;
+      max-height:300px;
+      margin-top: 20px;
+      margin-left:20px;
+      background-color: #fff;
+    }
+
+  .footer{
+    display:flex;
+    align-items: center;
+    justify-content:space-between;
+    padding:0 20px;
+    max-width:1200px;
+    height:100px;
+  }
+  
+  .footer .icon_closed{
+    width:40px;
+    height:40px;
+  }
+  
+  .footer .navigation ul{
+    margin-left: -15px;
+    line-height: 40px
+  }
+  .footer .navigation li{
+    margin-left: 10px;
+    display:inline-block;
+    color:#181818;
+    line-height:20px;
+  }
+  .footer .navigation li:nth-child(n+2)::before{
+    content:"";
+    display:inline-block;
+    width:70px;
+    height:1px;
+    background-color: #999;
+    margin-right:10px;
+    margin-bottom:4px;
+  }
+  
+  .footer .icon_top{
+    width:40px;
+    height:40px;
+    cursor:pointer;
+  }
+}
+
+
+
+
+
+
